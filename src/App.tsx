@@ -20,13 +20,20 @@ function App() {
             loop: true,
             autoplay: true,
           }}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+          }}
           isPaused={false}
+          width={"100%"}
+          height={"100%"}
         />
         <h1 className="click-me">click me</h1>
       </div>
       <div className={modal ? "modal-aberto" : "modal-fechado"}>
-        <h1>Feliz Natal</h1>
-        <h2>Eu te Amo, Relâmpago My Queen</h2>
+        <h1 style={{ padding: "5px" }}>Feliz Natal</h1>
+        <h2 style={{ padding: "5px" }}>Eu te Amo, Relâmpago My Queen</h2>
         <Lottie
           options={{
             animationData: arvore,
